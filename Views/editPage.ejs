@@ -21,7 +21,10 @@
         <!-- {/* image section  */} -->
         <section
           class="w-full h-[40vh] lg:h-[55vh] bg-cover bg-center brightness-50"
-          style="background: black"
+          style="
+            background-image: url('../90183803_SL-091823-63290-20.jpg');
+            width: 100%;
+          "
         ></section>
 
         <!-- {/* tagline division  */} -->
@@ -33,15 +36,13 @@
       </div>
 
       <!-- {/* bottom relative container  */} -->
-      <div
-        class="w-full h-[1200px] md:h-[60vh] lg:h-[130vh] bg-blue-300 relative"
-      >
+      <div class="w-full h-[1200px] md:h-[60vh] lg:h-[130vh] bg-black relative">
         <!-- {/* division with floating form  */} -->
         <div
           class="absolute -top-[3%] md:-top-[10%] left-1/2 -translate-x-1/2 md:grid-cols-3 h-fit w-3/5 md:w-[90%] rounded shadow overflow-hidden text-white"
         >
           <!-- {/* form / left div  */} -->
-          <div class="p-2 md:p-4 h-full bg-gray-800 col-span-2 w-9/12">
+          <div class="p-2 md:p-4 h-full bg-black col-span-2 w-9/12 rounded-xl">
             <form method="post" action="/updateTodo/<%= recod.id %>">
               <div
                 class="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 px-4 md:py-12 md:px-8 text-sm"
@@ -52,7 +53,7 @@
                     Name <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Name"
                     required
                     name="name"
@@ -67,7 +68,7 @@
                     Email <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Email"
                     required
                     name="email"
@@ -82,7 +83,7 @@
                     Phone <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Phone Number"
                     required
                     name="phone"
@@ -97,7 +98,7 @@
                     Subject <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Subject"
                     required
                     name="subject"
@@ -112,7 +113,7 @@
                     Message <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Message"
                     required
                     name="msg"
@@ -123,7 +124,7 @@
 
                 <button
                   type="submit"
-                  class="py-2 px-4 md:py-4 md:px-6 bg-gray-800 rounded-md border-2 border-white flex items-center gap-2 hover:scale-95 transition-all"
+                  class="py-2 px-4 md:py-4 md:px-6 bg-black rounded-md border-2 border-white flex items-center gap-2 hover:scale-95 transition-all"
                 >
                   <span class="text-xl">Submit</span>
                   <svg

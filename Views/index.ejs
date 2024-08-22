@@ -43,7 +43,7 @@
         >
           <!-- {/* form / left div  */} -->
           <div
-            class="p-2 md:p-4 h-full bg-gray-800 col-span-2 w-9/12 mb-[150px] rounded-xl"
+            class="p-2 md:p-4 h-full bg-black col-span-2 w-9/12 mb-[150px] rounded-xl"
           >
             <form action="/vlntForm" method="post">
               <div
@@ -55,7 +55,7 @@
                     Name <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Name"
                     required
                     name="name"
@@ -69,7 +69,7 @@
                     Email <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Email"
                     required
                     name="email"
@@ -83,7 +83,7 @@
                     Skills <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Phone Number"
                     required
                     name="phone"
@@ -97,7 +97,7 @@
                     Subject <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Subject"
                     required
                     name="subject"
@@ -111,7 +111,7 @@
                     Message <span class="text-red-500">&#42;</span>
                   </label>
                   <input
-                    class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                    class="border-[1px] border-white bg-black p-2 rounded-md"
                     placeholder="Enter Your Message"
                     required
                     name="msg"
@@ -121,7 +121,7 @@
 
                 <button
                   type="submit"
-                  class="py-2 px-2 w-[160px] md:py-4 md:px-6 bg-gray-800 rounded-md border-2 border-white flex items-center gap-2 hover:scale-95 transition-all"
+                  class="py-2 px-2 w-[160px] md:py-4 md:px-6 bg-black rounded-md border-2 border-white flex items-center gap-2 hover:scale-95 transition-all"
                 >
                   <span class="text-xl">Submit</span>
                   <svg
@@ -161,7 +161,7 @@
               Volunteer Information
             </h2>
 
-            <table class="bg-gray-800">
+            <table class="bg-black">
               <thead
                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
               >
@@ -179,7 +179,7 @@
                 <% localStorage.forEach((user)=>{ %>
 
                 <tr
-                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                  class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-black border-b dark:border-gray-700"
                 >
                   <td class="px-6 py-4 uppercase"><%= user.name %></td>
                   <td class="px-6 py-4"><%= user.email %></td>
